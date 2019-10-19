@@ -17,13 +17,14 @@ namespace ApiContactSecurity.Controllers
         private DataContext db = new DataContext();
 
         // GET: api/Contacts
-        //[Security]
+        [Authorize]
         public IQueryable<Contact> GetContacts()
         {
             return db.Contacts;
         }
 
         // GET: api/Contacts/5
+        [Authorize]
         [ResponseType(typeof(Contact))]
         public IHttpActionResult GetContact(int id)
         {
@@ -37,6 +38,7 @@ namespace ApiContactSecurity.Controllers
         }
 
         // PUT: api/Contacts/5
+        [Authorize]
         [ResponseType(typeof(void))]
         public IHttpActionResult PutContact(int id, Contact contact)
         {
@@ -72,6 +74,7 @@ namespace ApiContactSecurity.Controllers
         }
 
         // POST: api/Contacts
+        [Authorize]
         [ResponseType(typeof(Contact))]
         public IHttpActionResult PostContact(Contact contact)
         {
@@ -87,6 +90,7 @@ namespace ApiContactSecurity.Controllers
         }
 
         // DELETE: api/Contacts/5
+        [Authorize]
         [ResponseType(typeof(Contact))]
         public IHttpActionResult DeleteContact(int id)
         {
