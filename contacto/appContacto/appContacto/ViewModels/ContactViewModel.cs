@@ -1,16 +1,16 @@
 ﻿namespace appContacto.ViewModels
 {
-    using appContacto.Models;
-    using appContacto.Services;
+    using Models;
+    using Services;
+    using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using System.Linq;
     using Xamarin.Forms;
 
-    public class ContactViewModel:BaseViewModel
+    public class ContactViewModel : BaseViewModel
     {
         #region Attributes
-        ApiService apiService;
+        private ApiService apiService;
         private ObservableCollection<Contact> contacts;
         #endregion
 
@@ -68,7 +68,8 @@
         private IEnumerable<Contact> ToContactView()
         {
             ObservableCollection<Contact> collection = new ObservableCollection<Contact>();
-            foreach (var lista in main.ContacList)
+            MainViewModel main = MainViewModel.GetInstance();
+            foreach (var lista in main.ContactList)
             {
                 Contact contacto = new Contact();
                 contacto.ContactID = lista.ContactID;
