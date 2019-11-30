@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parcial2", "Parcial2\Parcial2.csproj", "{9792B78D-938F-4BF9-BFDB-6114BE632171}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaUnitaria", "PruebaUnitaria\PruebaUnitaria.csproj", "{0AEBEEEB-DD7E-48D7-BB7F-501A4DF2357C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9792B78D-938F-4BF9-BFDB-6114BE632171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9792B78D-938F-4BF9-BFDB-6114BE632171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9792B78D-938F-4BF9-BFDB-6114BE632171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9792B78D-938F-4BF9-BFDB-6114BE632171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEBEEEB-DD7E-48D7-BB7F-501A4DF2357C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEBEEEB-DD7E-48D7-BB7F-501A4DF2357C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEBEEEB-DD7E-48D7-BB7F-501A4DF2357C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEBEEEB-DD7E-48D7-BB7F-501A4DF2357C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3EAB606-C5DA-43A9-BCF0-5471CC76ADB0}
+	EndGlobalSection
+EndGlobal
